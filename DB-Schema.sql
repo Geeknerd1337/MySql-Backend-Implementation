@@ -8,9 +8,9 @@ location varchar(255)
 
 create table licenses(
 license_ID int primary key,
-food_handling boolean,
-alcohol_sales boolean,
-money_handling boolean
+has_food_handling boolean,
+has_alcohol_sales boolean,
+has_money_handling boolean
 );
 
 create table employee(
@@ -48,7 +48,7 @@ foreign key (emp_ID) references employee(emp_ID)
 
 create table region(
 region_ID int primary key,
-annual_profit float NOT NULL,
+annual_profit double NOT NULL,
 state varchar(255) NOT NULL
 );
 
@@ -77,7 +77,7 @@ create table card_reader(
 card_reader_ID int,
 serial_number int,
 total_transactions int NOT NULL,
-dollars_collected_daily float NOT NULL,
+dollars_collected_daily double NOT NULL,
 PRIMARY KEY(card_reader_ID, serial_number)
 );
 
@@ -96,15 +96,14 @@ foreign key (store_ID) references store(store_ID)
 
 create table gas_type(
 gas_type_ID int primary key,
-price double NOT NULL,
+price_per_gallon double NOT NULL,
 type_name varchar(255) NOT NULL
 );
-
 
 create table pump_gas_type_assoc(
 pump_ID int not null,
 gas_type_ID int not null,
-PRIMARY KEY(pump_ID, type_ID),
+PRIMARY KEY(pump_ID, gas_type_ID),
 foreign key (pump_ID) references pump(pump_ID),
 foreign key (gas_type_ID) references gas_type(gas_type_ID)
 );
@@ -116,6 +115,51 @@ holding_capacity double not null,
 current_capacity double not null,
 foreign key (gas_type_ID) references gas_type(gas_type_ID)
 );
+
+create table gas_supplier(
+gas_supplier_ID int primary key,
+supplier_name varchar(255) not null,
+sales_rep_name varchar(255) not null,
+supplier_address varchar(255) not null,
+phone_number varchar(255) not null
+);
+
+create table gas_invoice(
+invoice_ID int primary key,
+gallons_delivered double NOT NULL,
+gas_type_ID int not null,
+amount_due double not null,
+invoice_date date not null,
+gas_supplier_ID int not null,
+foreign key (gas_supplier_ID) references gas_supplier(gas_supplier_ID),
+foreign key (gas_type_ID) references gas_type(gas_type_ID)
+);
+
+create table aisle(
+aisle_ID int primary key,
+category varchar(255) not null
+);
+
+create table product(
+product_ID int primary key,
+product_name varchar(255) not null,
+sell_by date not null,
+retail_price double not null,
+aile_ID int not null,
+foreign key (aisle_ID) references aisle(aisle_ID)
+);
+
+create table inventory(
+store_ID int not null,
+product_ID int not null,
+quantity int not null,
+beginning_quantity int not null,
+primary key(store_ID, product_ID),
+foreign key (store_ID) references store(store_ID),
+foreign key (product_ID) references product(product_ID)
+);
+
+
 
 
 
