@@ -145,8 +145,27 @@ product_ID int primary key,
 product_name varchar(255) not null,
 sell_by date not null,
 retail_price double not null,
-aile_ID int not null,
+aisle_ID int not null,
 foreign key (aisle_ID) references aisle(aisle_ID)
+);
+
+create table product_supplier(
+supplier_ID int primary key,
+supplier_name varchar(255) not null,
+sales_rep_name varchar(255) not null,
+supplier_address varchar(255) not null,
+phone_number varchar(255) not null
+);
+
+
+create table product_invoice(
+invoice_ID int primary key,
+product_ID int not null,
+amount_due double not null,
+quantity_delivered int not null,
+supplier_ID int not null,
+foreign key (product_ID) references product(product_ID),
+foreign key (supplier_ID) references product_supplier(supplier_ID)
 );
 
 create table inventory(
@@ -158,6 +177,28 @@ primary key(store_ID, product_ID),
 foreign key (store_ID) references store(store_ID),
 foreign key (product_ID) references product(product_ID)
 );
+
+create table partner_business(
+partner_id int primary key,
+business_type varchar(255) not null,
+contract_start_date date not null,
+contract_end_date date,
+store_ID int not null,
+foreign key (store_ID) references store(store_ID)
+);
+
+
+create table rewards_program_account(
+account_ID int not null,
+store_ID int not null,
+first_name varchar(255) not null,
+middle_initial varchar(1) null,
+last_name varchar(255) not null,
+rewars_points int not null,
+primary key(account_ID, store_ID),
+foreign key (store_ID) references store(store_ID)
+)
+
 
 
 
