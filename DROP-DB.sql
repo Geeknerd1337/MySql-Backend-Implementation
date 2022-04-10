@@ -14,7 +14,7 @@ drop table if exists partner_business;
 drop table if exists payroll;
 drop table if exists pump;
 drop table if exists product;
-drop table if exists prouct_invoice;
+drop table if exists product_invoice;
 drop table if exists product_supplier;
 drop table if exists pump;
 drop table if exists pump_gas_type_assoc;

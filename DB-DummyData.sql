@@ -1,0 +1,1 @@
+insert into region (region_ID, annual_profit, state) values (0,annual
