@@ -2,33 +2,21 @@ use cse;
 create table region(
 region_ID int primary key not null AUTO_INCREMENT,
 annual_profit double NOT NULL,
+region_name varchar(255) not null,
 state varchar(255) NOT NULL
 );
 
 create table store(
 store_ID int primary key not null AUTO_INCREMENT,
 region_ID int NOT NULL,
-address_ID int NOT NULL,
-phone_ID int NOT NULL,
-num_employees int NOT NULL,
-num_gas_pumps int NOT NULL,
 phone_number varchar(255) NOT NULL,
 store_address varchar(255) NOT NULL,
 foreign key (region_ID) references region(region_ID)
 );
 
-
 create table department(
 department_ID int primary key not null AUTO_INCREMENT,
-dept_name varchar(255),
-store_ID int not null
-);
-
-create table licenses(
-license_ID int primary key not null AUTO_INCREMENT,
-has_food_handling boolean,
-has_alcohol_sales boolean,
-has_money_handling boolean
+dept_name varchar(255)
 );
 
 create table employee(
@@ -36,23 +24,33 @@ emp_ID int primary key not null AUTO_INCREMENT,
 first_name varchar(255) NOT NULL,
 middle_initial varchar(1) NULL,
 last_name varchar(255) NOT NULL,
-department_ID int NOT NULL,
-license_ID int NOT NULL,
-foreign key (department_ID) references department(department_ID),
-foreign key (license_ID) references licenses(license_ID)
+store_ID int NOT NULL,
+department_ID int not null,
+foreign key (store_ID) references store(store_ID),
+foreign key (department_ID) references department(department_ID)
 );
 
-create table payroll(
-payment_ID int primary key not null AUTO_INCREMENT,
-emp_ID int,
-total_wage int,
-hours_worked int,
-overtime int,
-bonus_pay int,
-payment_method varchar(255),
+create table licenses(
+license_ID int not null AUTO_INCREMENT,
+emp_ID int not NULL,
+is_food_handling boolean,
+is_alcohol_sales boolean,
+is_money_handling boolean,
+primary key (license_ID, emp_ID),
 foreign key (emp_ID) references employee(emp_ID)
 );
 
+create table payroll(
+payment_ID int not null AUTO_INCREMENT,
+emp_ID int,
+hourly_wage double,
+overtime_wage double,
+hours_worked double,
+payment_method varchar(255),
+pay_date date not null,
+foreign key (emp_ID) references employee(emp_ID),
+primary key (payment_ID, emp_ID)
+);
 
 create table employee_schedule(
 schedule_ID int primary key not null AUTO_INCREMENT,
