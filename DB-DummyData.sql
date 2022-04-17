@@ -68,9 +68,9 @@ insert into employee_schedule (
 insert into employee_schedule (
 insert into employee_schedule (
 
-insert into management (first_name, middle_initial, last_name, region_ID) values (Joseph, S, McNoe, 0);
-insert into management (first_name, middle_initial, last_name, region_ID) values (John, H, Smith, 0);
-insert into management (first_name, middle_initial, last_name, region_ID) values (Thomas, A, Anderson, 1);
+insert into management (first_name, middle_initial, last_name, region_ID) values ("Joseph", "S", "McNoe", 0);
+insert into management (first_name, middle_initial, last_name, region_ID) values ("John", "H", "Smith", 0);
+insert into management (first_name, middle_initial, last_name, region_ID) values ("Thomas", "A", "Anderson", 1);
 
 insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (0334873102, 1032, 457);
 insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (2224156358, 655, 552);
@@ -80,7 +80,14 @@ insert into card_reader (serial_number, total_transactions, dollars_collected_da
 insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (3462093115, 458, 340);
 insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (3102327578, 45, 228);
 
+insert into pump (
+insert into pump (
+insert into pump (
+insert into pump (
+insert into pump (
+insert into pump (
 
-
-
-
+insert into gas_type (price_per_gallon, type_name) values (3.55, "Regular");
+insert into gas_type (price_per_gallon, type_name) values (3.89, "Unleaded");
+insert into gas_type (price_per_gallon, type_name) values (3.97, "Unleaded Plus");
+insert into gas_type (price_per_gallon, type_name) values (4.57, "Diesel");
