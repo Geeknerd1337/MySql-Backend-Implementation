@@ -102,7 +102,12 @@ insert into pump_gas_type_assoc (pump_ID, gas_type_ID) values (5, 1);
 insert into resevoir (gas_type_ID, holding_capacity, current_capacity) values (0, 40000, 27400); 
 insert into resevoir (gas_type_ID, holding_capacity, current_capacity) values (1, 35000, 20750); 
 insert into resevoir (gas_type_ID, holding_capacity, current_capacity) values (2, 30000, 19450); 
-insert into resevoir (gas_type_ID, holding_capacity, current_capacity) values (3, 40000, 31250); 
+insert into resevoir (gas_type_ID, holding_capacity, current_capacity) values (3, 40000, 31250);
 
+insert into gas_supplier (supplier_name, sales_rep_name, supplier_address, phone_number) values ("Fuels-R-Us", "Sheryl Smith", "2283 Woland Dr. Dallas TX 35024", 972-742-1337);
 
-  
+insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_date, gas_supplier_ID) values (15000, 0, 17500, STR_TO_DATE('1-26-2021', '%d-%m-%Y'), 0);
+insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_date, gas_supplier_ID) values (10000, 1, 14250, STR_TO_DATE('2-28-2021', '%d-%m-%Y'), 0);
+insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_date, gas_supplier_ID) values (9500, 2, 12000, STR_TO_DATE('2-16-2021', '%d-%m-%Y'), 0);
+insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_date, gas_supplier_ID) values (12500, 3, 16000, STR_TO_DATE('2-07-2021', '%d-%m-%Y'), 0);
+
