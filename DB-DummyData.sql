@@ -106,17 +106,25 @@ insert into resevoir (gas_type_ID, holding_capacity, current_capacity) values (3
 
 insert into gas_supplier (supplier_name, sales_rep_name, supplier_address, phone_number) values ("Fuels-R-Us", "Sheryl Smith", "2283 Woland Dr. Dallas TX 35024", 972-742-1337);
 
-insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_date, gas_supplier_ID) values (15000, 0, 17500, STR_TO_DATE('1-26-2021', '%d-%m-%Y'), 0);
-insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_date, gas_supplier_ID) values (10000, 1, 14250, STR_TO_DATE('2-28-2021', '%d-%m-%Y'), 0);
-insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_date, gas_supplier_ID) values (9500, 2, 12000, STR_TO_DATE('2-16-2021', '%d-%m-%Y'), 0);
-insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_date, gas_supplier_ID) values (12500, 3, 16000, STR_TO_DATE('2-07-2021', '%d-%m-%Y'), 0);
+insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_date, gas_supplier_ID) values (15000, 0, 17500, STR_TO_DATE('24-07-2021', '%d-%m-%Y'), 0);
+insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_date, gas_supplier_ID) values (10000, 1, 14250, STR_TO_DATE('04-06-2021', '%d-%m-%Y'), 0);
+insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_date, gas_supplier_ID) values (9500, 2, 12000, STR_TO_DATE('11-10-2021', '%d-%m-%Y'), 0);
+insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_date, gas_supplier_ID) values (12500, 3, 16000, STR_TO_DATE('02-07-2021', '%d-%m-%Y'), 0);
 
-insert into aisle (category) values (Produce);
-insert into aisle (category) values (Cereal);
-insert into aisle (category) values (Canned Goods);
-insert into aisle (category) values (Frozen);
-insert into aisle (category) values (Bread);
-insert into aisle (category) values (Dairy);
-insert into aisle (category) values (Meats);
+insert into aisle (category) values ("Produce");
+insert into aisle (category) values ("Canned Goods");
+insert into aisle (category) values ("Frozen");
+insert into aisle (category) values ("Bread");
+insert into aisle (category) values ("Dairy");
+insert into aisle (category) values ("Meats");
+
+insert into product (product_name, sell_by, retail_price, aisle_ID) values ("Apple", STR_TO_DATE('30-04-2022', '%d-%m-%Y'), 1.27, 0);
+insert into product (product_name, sell_by, retail_price, aisle_ID) values ("Milk", STR_TO_DATE('22-04-2022', '%d-%m-%Y'), 1.75, 4);
+insert into product (product_name, sell_by, retail_price, aisle_ID) values ("Canned Pasta", STR_TO_DATE('25-08-2024', '%d-%m-%Y'), 1.30, 1);
+insert into product (product_name, sell_by, retail_price, aisle_ID) values ("Frozen Pizza", STR_TO_DATE('17-09-2022', '%d-%m-%Y'), 6.50, 2);
+insert into product (product_name, sell_by, retail_price, aisle_ID) values ("Hot Dog Buns", STR_TO_DATE('27-04-2022', '%d-%m-%Y'), 2.75, 3);
+insert into product (product_name, sell_by, retail_price, aisle_ID) values ("Hot Dogs", STR_TO_DATE('07-06-2022', '%d-%m-%Y'), 3.50, 5);
+  
+
 
   
