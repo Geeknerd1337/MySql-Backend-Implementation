@@ -91,3 +91,18 @@ insert into gas_type (price_per_gallon, type_name) values (3.55, "Regular");
 insert into gas_type (price_per_gallon, type_name) values (3.89, "Unleaded");
 insert into gas_type (price_per_gallon, type_name) values (3.97, "Unleaded Plus");
 insert into gas_type (price_per_gallon, type_name) values (4.57, "Diesel");
+
+insert into pump_gas_type_assoc (pump_ID, gas_type_ID) values (0, 0);
+insert into pump_gas_type_assoc (pump_ID, gas_type_ID) values (1, 3);
+insert into pump_gas_type_assoc (pump_ID, gas_type_ID) values (2, 2);
+insert into pump_gas_type_assoc (pump_ID, gas_type_ID) values (3, 0);
+insert into pump_gas_type_assoc (pump_ID, gas_type_ID) values (4, 0);
+insert into pump_gas_type_assoc (pump_ID, gas_type_ID) values (5, 1);
+
+insert into resevoir (gas_type_ID, holding_capacity, current_capacity) values (0, 40000, 27400); 
+insert into resevoir (gas_type_ID, holding_capacity, current_capacity) values (1, 35000, 20750); 
+insert into resevoir (gas_type_ID, holding_capacity, current_capacity) values (2, 30000, 19450); 
+insert into resevoir (gas_type_ID, holding_capacity, current_capacity) values (3, 40000, 31250); 
+
+
+  
