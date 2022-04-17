@@ -58,8 +58,27 @@ insert into payroll (emp_ID, hourly_wage, overtime_coef, hours_worked, payment_m
 insert into payroll (emp_ID, hourly_wage, overtime_coef, hours_worked, payment_method, pay_date) values (8, 7.25, 1.5, 40.0, "Direct Deposit", STR_TO_DATE('1-15-2021', '%d-%m-%Y'));
 
 
+insert into employee_schedule (
+insert into employee_schedule (
+insert into employee_schedule (
+insert into employee_schedule (
+insert into employee_schedule (
+insert into employee_schedule (
+insert into employee_schedule (
+insert into employee_schedule (
+insert into employee_schedule (
 
+insert into management (first_name, middle_initial, last_name, region_ID) values (Joseph, S, McNoe, 0);
+insert into management (first_name, middle_initial, last_name, region_ID) values (John, H, Smith, 0);
+insert into management (first_name, middle_initial, last_name, region_ID) values (Thomas, A, Anderson, 1);
 
+insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (0334873102, 1032, 457);
+insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (2224156358, 655, 552);
+insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (4587743895, 1032, 457);
+insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (0633498452, 824, 276);
+insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (9775358009, 655, 541);
+insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (3462093115, 458, 340);
+insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (3102327578, 45, 228);
 
 
 
