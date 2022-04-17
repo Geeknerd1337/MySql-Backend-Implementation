@@ -111,3 +111,12 @@ insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_dat
 insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_date, gas_supplier_ID) values (9500, 2, 12000, STR_TO_DATE('2-16-2021', '%d-%m-%Y'), 0);
 insert into gas_invoice (gallons_delivered, gas_type_ID, amount_due, invoice_date, gas_supplier_ID) values (12500, 3, 16000, STR_TO_DATE('2-07-2021', '%d-%m-%Y'), 0);
 
+insert into aisle (category) values (Produce);
+insert into aisle (category) values (Cereal);
+insert into aisle (category) values (Canned Goods);
+insert into aisle (category) values (Frozen);
+insert into aisle (category) values (Bread);
+insert into aisle (category) values (Dairy);
+insert into aisle (category) values (Meats);
+
+  
