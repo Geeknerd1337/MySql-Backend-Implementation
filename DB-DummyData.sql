@@ -99,12 +99,12 @@ insert into card_reader (serial_number, total_transactions, dollars_collected_da
 insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (9775358009, 655, 541);
 insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (3462093115, 458, 340);
 
-insert into pump (local_ip, date_installed, store_ID, gallons_sold, dispense_rate, last_maintenance, card_reader_ID) values (0923, STR_TO_DATE('20-07-2005', '%d-%m-%Y'), 0, 63000, 6.09, STR_TO_DATE('10-12-2020', '%d-%m-%Y'), 0);
-insert into pump (local_ip, date_installed, store_ID, gallons_sold, dispense_rate, last_maintenance, card_reader_ID) values (3436, STR_TO_DATE('13-05-2016', '%d-%m-%Y'), 0, 31500, 8.23, STR_TO_DATE('11-12-2020', '%d-%m-%Y'), 1);
-insert into pump (local_ip, date_installed, store_ID, gallons_sold, dispense_rate, last_maintenance, card_reader_ID) values (0645, STR_TO_DATE('08-04-2007', '%d-%m-%Y'), 1, 51000, 7.38, STR_TO_DATE('24-01-2021', '%d-%m-%Y'), 2);
-insert into pump (local_ip, date_installed, store_ID, gallons_sold, dispense_rate, last_maintenance, card_reader_ID) values (7783, STR_TO_DATE('23-03-2018', '%d-%m-%Y'), 1, 22500, 9.57, STR_TO_DATE('24-01-2021', '%d-%m-%Y'), 3);
-insert into pump (local_ip, date_installed, store_ID, gallons_sold, dispense_rate, last_maintenance, card_reader_ID) values (0769, STR_TO_DATE('05-01-2011', '%d-%m-%Y'), 2, 57000, 6.55, STR_TO_DATE('15-01-2021', '%d-%m-%Y'), 4);
-insert into pump (local_ip, date_installed, store_ID, gallons_sold, dispense_rate, last_maintenance, card_reader_ID) values (0563, STR_TO_DATE('17-09-2017', '%d-%m-%Y'), 2, 23000, 8.52, STR_TO_DATE('14-01-2021', '%d-%m-%Y'), 5);
+insert into pump (local_ip, date_installed, store_ID, gallons_sold, dispense_rate, last_maintenance, card_reader_ID) values (0923, STR_TO_DATE('07-20-2005', '%m-%d-%Y'), 0, 63000, 6.09, STR_TO_DATE('10-12-2020', '%d-%m-%Y'), 0);
+insert into pump (local_ip, date_installed, store_ID, gallons_sold, dispense_rate, last_maintenance, card_reader_ID) values (3436, STR_TO_DATE('05-13-2016', '%m-%d-%Y'), 0, 31500, 8.23, STR_TO_DATE('11-12-2020', '%d-%m-%Y'), 1);
+insert into pump (local_ip, date_installed, store_ID, gallons_sold, dispense_rate, last_maintenance, card_reader_ID) values (0645, STR_TO_DATE('08-04-2007', '%m-%d-%Y'), 1, 51000, 7.38, STR_TO_DATE('24-01-2021', '%d-%m-%Y'), 2);
+insert into pump (local_ip, date_installed, store_ID, gallons_sold, dispense_rate, last_maintenance, card_reader_ID) values (7783, STR_TO_DATE('03-23-2018', '%m-%d-%Y'), 1, 22500, 9.57, STR_TO_DATE('24-01-2021', '%d-%m-%Y'), 3);
+insert into pump (local_ip, date_installed, store_ID, gallons_sold, dispense_rate, last_maintenance, card_reader_ID) values (0769, STR_TO_DATE('05-01-2011', '%m-%d-%Y'), 2, 57000, 6.55, STR_TO_DATE('15-01-2021', '%d-%m-%Y'), 4);
+insert into pump (local_ip, date_installed, store_ID, gallons_sold, dispense_rate, last_maintenance, card_reader_ID) values (0563, STR_TO_DATE('09-17-2017', '%m-%d-%Y'), 2, 23000, 8.52, STR_TO_DATE('14-01-2021', '%d-%m-%Y'), 5);
 
 insert into gas_type (price_per_gallon, type_name) values (3.55, "Regular");
 insert into gas_type (price_per_gallon, type_name) values (3.89, "Unleaded");
