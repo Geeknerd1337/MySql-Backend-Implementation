@@ -93,7 +93,7 @@ insert into management (first_name, middle_initial, last_name, region_ID) values
 insert into management (first_name, middle_initial, last_name, region_ID) values ("Thomas", "A", "Anderson", 1);
 
 insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (0334873102, 1032, 457);
-insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (2224156358, 655, 552);
+insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (2224156358, 679, 552);
 insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (4587743895, 1032, 457);
 insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (0633498452, 824, 276);
 insert into card_reader (serial_number, total_transactions, dollars_collected_daily) values (9775358009, 655, 541);
