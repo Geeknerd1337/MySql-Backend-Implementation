@@ -44,7 +44,7 @@ create table payroll(
 payment_ID int not null AUTO_INCREMENT,
 emp_ID int,
 hourly_wage double,
-overtime_wage double,
+overtime_coef double,
 hours_worked double,
 payment_method varchar(255),
 pay_date date not null,
