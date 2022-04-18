@@ -192,7 +192,7 @@ store_ID int not null,
 first_name varchar(255) not null,
 middle_initial varchar(1) null,
 last_name varchar(255) not null,
-rewars_points int not null,
+rewards_points int not null,
 primary key(account_ID, store_ID),
 foreign key (store_ID) references store(store_ID)
 )
