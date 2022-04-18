@@ -141,9 +141,36 @@ insert into product (product_name, sell_by, retail_price, aisle_ID) values ("App
 insert into product (product_name, sell_by, retail_price, aisle_ID) values ("Milk", STR_TO_DATE('22-04-2022', '%d-%m-%Y'), 1.75, 4);
 insert into product (product_name, sell_by, retail_price, aisle_ID) values ("Canned Pasta", STR_TO_DATE('25-08-2024', '%d-%m-%Y'), 1.30, 1);
 insert into product (product_name, sell_by, retail_price, aisle_ID) values ("Frozen Pizza", STR_TO_DATE('17-09-2022', '%d-%m-%Y'), 6.50, 2);
-insert into product (product_name, sell_by, retail_price, aisle_ID) values ("Hot Dog Buns", STR_TO_DATE('27-04-2022', '%d-%m-%Y'), 2.75, 3);
-insert into product (product_name, sell_by, retail_price, aisle_ID) values ("Hot Dogs", STR_TO_DATE('07-06-2022', '%d-%m-%Y'), 3.50, 5);
+insert into product (product_name, sell_by, retail_price, aisle_ID) values ("Hamburger Buns", STR_TO_DATE('27-04-2022', '%d-%m-%Y'), 2.75, 3);
+insert into product (product_name, sell_by, retail_price, aisle_ID) values ("Beef Patties", STR_TO_DATE('07-06-2022', '%d-%m-%Y'), 3.50, 5);
   
+insert into product_supplier (supplier_name, sales_rep_name, supplier_address, phone_number) values ("Green Fields Farm and Orchard", "Cindy Lou", "405 Blackberry Ln, Garland TX 70355", "214-705-2343");
+insert into product_supplier (supplier_name, sales_rep_name, supplier_address, phone_number) values ("Running P Ranch", "Moe Howard", "988 Roundland Dr, Sulphur Springs TX 70487", "972-676-5633");
+insert into product_supplier (supplier_name, sales_rep_name, supplier_address, phone_number) values ("Papa's Pizzaria", "Olive Oyl", "6908 Grove St, Denton TX 70532", "214-899-5463");
+insert into product_supplier (supplier_name, sales_rep_name, supplier_address, phone_number) values ("Pasta and Things Related to Pasta Inc.", "Mary Sue", "405 Blackberry Ln, Garland TX 70355", "214-763-2388");
+
+insert into product_invoice (invoice_ID, product_ID, amount_due, quantity_delivered, supplier_ID) values ();
 
 
-  
+
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (0, 0, 127, 200);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (0, 1, 58, 100);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (0, 2, 96, 300);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (0, 3, 34, 75);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (0, 4, 76, 150);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (0, 5, 63, 150);
+
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 0, 110, 200);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 1, 67, 100);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 2, 134, 300);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 3, 49, 75);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 4, 96, 150);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 5, 104, 150);
+
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 0, 98, 200);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 1, 53, 100);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 2, 243, 300);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 3, 27, 75);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 4, 55, 150);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 5, 68, 150);
+
