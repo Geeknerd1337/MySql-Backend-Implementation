@@ -146,42 +146,42 @@ insert into product_supplier (supplier_name, sales_rep_name, supplier_address, p
 insert into product_supplier (supplier_name, sales_rep_name, supplier_address, phone_number) values ("Papa's Pizzaria", "Olive Oyl", "6908 Grove St, Denton TX 70532", "214-899-5463");
 insert into product_supplier (supplier_name, sales_rep_name, supplier_address, phone_number) values ("Pasta and Things Related to Pasta Inc.", "Mary Sue", "405 Blackberry Ln, Garland TX 70355", "214-763-2388");
 
-insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (1, 500, 100, 1, 1);
-insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (2, 200, 100, 2, 1);
-insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (3, 100, 100, 3, 2);
-insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (4, 500, 100, 4, 2);
-insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (5, 460, 100, 5, 2);
-insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (6, 650, 100, 6, 2);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (1, 500, 100, 1);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (2, 200, 100, 1);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (3, 100, 100, 2);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (4, 500, 100, 2);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (5, 460, 100, 2);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (6, 650, 100, 2);
 
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (0, 0, 127, 200);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (0, 1, 58, 100);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (0, 2, 96, 300);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (0, 3, 34, 75);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (0, 4, 76, 150);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (0, 5, 63, 150);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 1, 127, 200);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 2, 58, 100);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 3, 96, 300);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 4, 34, 75);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 5, 76, 150);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 6, 63, 150);
 
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 0, 110, 200);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 1, 67, 100);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 2, 134, 300);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 3, 49, 75);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 4, 96, 150);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 5, 104, 150);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 1, 110, 200);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 2, 67, 100);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 3, 134, 300);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 4, 49, 75);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 5, 96, 150);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 6, 104, 150);
 
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 0, 98, 200);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 1, 53, 100);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 2, 243, 300);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 3, 27, 75);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 4, 55, 150);
-insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 5, 68, 150);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (3, 1, 98, 200);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (3, 2, 53, 100);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (3, 3, 243, 300);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (3, 4, 27, 75);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (3, 5, 55, 150);
+insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (3, 6, 68, 150);
 
-insert into partner_business(bussiness_type, contract_start_date, contract_end_date, store_ID) values ("Food and Groceries", STR_TO_DATE('27-02-2022', '%d-%m-%Y'), STR_TO_DATE('27-02-2024', '%d-%m-%Y'), 0,);
-insert into partner_business(bussiness_type, contract_start_date, contract_end_date, store_ID) values ("Food and Groceries", STR_TO_DATE('30-04-2022', '%d-%m-%Y'), STR_TO_DATE('30-04-2024', '%d-%m-%Y') 1,);
-insert into partner_business(bussiness_type, contract_start_date, contract_end_date, store_ID) values ("Liqour and Wine", STR_TO_DATE('20-03-2022', '%d-%m-%Y'), STR_TO_DATE('20-03-2024', '%d-%m-%Y') 2,);
-insert into partner_business(bussiness_type, contract_start_date, contract_end_date, store_ID) values ("Bakery", STR_TO_DATE('30-04-2022', '%d-%m-%Y'), STR_TO_DATE('30-04-2024', '%d-%m-%Y') 0,);
+insert into partner_business(business_type, contract_start_date, contract_end_date, store_ID) values ("Food and Groceries", STR_TO_DATE('27-02-2022', '%d-%m-%Y'), STR_TO_DATE('27-02-2024', '%d-%m-%Y'), 1);
+insert into partner_business(business_type, contract_start_date, contract_end_date, store_ID) values ("Food and Groceries", STR_TO_DATE('30-04-2022', '%d-%m-%Y'), STR_TO_DATE('30-04-2024', '%d-%m-%Y'), 2);
+insert into partner_business(business_type, contract_start_date, contract_end_date, store_ID) values ("Liqour and Wine", STR_TO_DATE('20-03-2022', '%d-%m-%Y'), STR_TO_DATE('20-03-2024', '%d-%m-%Y'), 3);
+insert into partner_business(business_type, contract_start_date, contract_end_date, store_ID) values ("Bakery", STR_TO_DATE('30-04-2022', '%d-%m-%Y'), STR_TO_DATE('30-04-2024', '%d-%m-%Y'), 3);
 
-insert into rewards_program_account(store_ID, first_name, middle_initial, last_name, rewards_points) values (0, "Tommy", "Fredrick", "Chandler", 200, 0); 
-insert into rewards_program_account(store_ID, first_name, middle_initial, last_name, rewards_points) values (1, "Henry", "Ben", "Calvin", 405, 0); 
-insert into rewards_program_account(store_ID, first_name, middle_initial, last_name, rewards_points) values (2, "Bruce", "Banner", "Bond", 875, 1);
-insert into rewards_program_account(store_ID, first_name, middle_initial, last_name, rewards_points) values (3, "Thomas", "Larry", "Wayne", 745, 2);
+insert into rewards_program_account(store_ID, first_name, middle_initial, last_name, rewards_points) values (1, "Tommy", "F", "Chandler", 200); 
+insert into rewards_program_account(store_ID, first_name, middle_initial, last_name, rewards_points) values (2, "Henry", "B", "Calvin", 405); 
+insert into rewards_program_account(store_ID, first_name, middle_initial, last_name, rewards_points) values (3, "Bruce", "B", "Bond", 875);
+insert into rewards_program_account(store_ID, first_name, middle_initial, last_name, rewards_points) values (3, "Thomas", "L", "Wayne", 745);
                                                                                                        
                                                                                                        
