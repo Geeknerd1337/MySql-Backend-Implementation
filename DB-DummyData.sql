@@ -149,9 +149,12 @@ insert into product_supplier (supplier_name, sales_rep_name, supplier_address, p
 insert into product_supplier (supplier_name, sales_rep_name, supplier_address, phone_number) values ("Papa's Pizzaria", "Olive Oyl", "6908 Grove St, Denton TX 70532", "214-899-5463");
 insert into product_supplier (supplier_name, sales_rep_name, supplier_address, phone_number) values ("Pasta and Things Related to Pasta Inc.", "Mary Sue", "405 Blackberry Ln, Garland TX 70355", "214-763-2388");
 
-insert into product_invoice (invoice_ID, product_ID, amount_due, quantity_delivered, supplier_ID) values ();
-
-
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (6010099, 500, 400, 2057894, 0, 0);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (6010098, 200, 350, 2057894, 1, 0);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (6010097, 100, 300, 2057896, 2, 1);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (6010096, 500, 250, 2057896, 3, 1);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (6010096, 460, 450, 2057896, 4, 1);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (6010096, 650, 650, 2057896, 5, 1);
 
 insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (0, 0, 127, 200);
 insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (0, 1, 58, 100);
