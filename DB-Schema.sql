@@ -157,7 +157,7 @@ phone_number varchar(255) not null
 
 
 create table product_invoice(
-invoice_ID int primary key,
+invoice_ID int not null primary key auto_increment,
 product_ID int not null,
 amount_due double not null,
 quantity_delivered int not null,
