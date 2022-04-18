@@ -177,3 +177,14 @@ insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values
 insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 4, 55, 150);
 insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (2, 5, 68, 150);
 
+insert into partner_business(bussiness_type, contract_start_date, contract_end_date, store_ID) values ("Food and Groceries", STR_TO_DATE('27-02-2022', '%d-%m-%Y'), STR_TO_DATE('27-02-2024', '%d-%m-%Y'), 0,);
+insert into partner_business(bussiness_type, contract_start_date, contract_end_date, store_ID) values ("Food and Groceries", STR_TO_DATE('30-04-2022', '%d-%m-%Y'), STR_TO_DATE('30-04-2024', '%d-%m-%Y') 1,);
+insert into partner_business(bussiness_type, contract_start_date, contract_end_date, store_ID) values ("Liqour and Wine", STR_TO_DATE('20-03-2022', '%d-%m-%Y'), STR_TO_DATE('20-03-2024', '%d-%m-%Y') 2,);
+insert into partner_business(bussiness_type, contract_start_date, contract_end_date, store_ID) values ("Bakery", STR_TO_DATE('30-04-2022', '%d-%m-%Y'), STR_TO_DATE('30-04-2024', '%d-%m-%Y') 0,);
+
+insert into rewards_program_account(store_ID, first_name, middle_initial, last_name, rewards_points) values (0, "Tommy", "Fredrick", "Chandler", 200, 0); 
+insert into rewards_program_account(store_ID, first_name, middle_initial, last_name, rewards_points) values (1, "Henry", "Ben", "Calvin", 405, 0); 
+insert into rewards_program_account(store_ID, first_name, middle_initial, last_name, rewards_points) values (2, "Bruce", "Banner", "Bond", 875, 1);
+insert into rewards_program_account(store_ID, first_name, middle_initial, last_name, rewards_points) values (3, "Thomas", "Larry", "Wayne", 745, 2);
+                                                                                                       
+                                                                                                       
