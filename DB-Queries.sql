@@ -11,3 +11,7 @@ join product as p on p.product_ID = i.product_ID
 join store as s on i.store_id = s.store_ID
 where i.store_ID = 1;
 
+/*Get basic payment information of employees*/
+select store_address, first_name, last_name, hourly_wage, hours_worked, payment_method from employee as emp
+join store as st on st.store_ID = emp.store_ID
+join payroll as pay on pay.emp_ID = emp.emp_ID;
