@@ -15,3 +15,13 @@ where i.store_ID = 1;
 select store_address, first_name, last_name, hourly_wage, hours_worked, payment_method from employee as emp
 join store as st on st.store_ID = emp.store_ID
 join payroll as pay on pay.emp_ID = emp.emp_ID;
+
+/*Get product delivery information*/
+select supplier_name, product_name, quantity_delivered, amount_due from product_invoice as inv
+join product_supplier as ps on ps.supplier_ID = inv.supplier_ID
+join product as pr on pr.product_ID = inv.product_ID;
+
+/*Get sales information of gas pumps*/
+select store_address, pump_ID, gallons_sold, total_transactions, dollars_collected_daily from pump as pu
+join store as str on str.store_ID = pu.store_ID
+join card_reader as cr on cr.card_reader_ID = pu.card_reader_ID;
