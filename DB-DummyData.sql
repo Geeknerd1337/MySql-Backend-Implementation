@@ -147,10 +147,10 @@ insert into product_supplier (supplier_name, sales_rep_name, supplier_address, p
 insert into product_supplier (supplier_name, sales_rep_name, supplier_address, phone_number) values ("Pasta and Things Related to Pasta Inc.", "Mary Sue", "405 Blackberry Ln, Garland TX 70355", "214-763-2388");
 
 insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (1, 500, 100, 1);
-insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (2, 200, 100, 1);
-insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (3, 100, 100, 2);
-insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (4, 500, 100, 2);
-insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (5, 460, 100, 2);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (2, 200, 100, 2);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (3, 100, 100, 4);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (4, 500, 100, 3);
+insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (5, 460, 100, 1);
 insert into product_invoice (product_ID, amount_due, quantity_delivered, supplier_ID) values (6, 650, 100, 2);
 
 insert into inventory(store_ID, product_ID, quantity, beginning_quantity) values (1, 1, 127, 200);
